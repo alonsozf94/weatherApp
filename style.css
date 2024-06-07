@@ -1,0 +1,125 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent url("1716420576223096.png") no-repeat center;
+  background-size: cover;
+}
+/* Commonr & Shared */
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+/* Header */
+header {
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  gap: 5px;
+}
+input {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  color: #333333;
+  padding: 5px;
+}
+input:focus {
+  outline: none;
+}
+/* Content */
+.content {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather-container {
+  padding: 20px;
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.weather-container h1 {
+  margin: 0 0 3px 0;
+  font-size: 3em;
+}
+.weather-container .location-container {
+  margin-bottom: 10px;
+}
+/* Actual Weather */
+.forecast-container {
+  display: flex;
+  padding: 15px 0;
+  gap: 8px;
+}
+.current-container .forecast-box {
+  max-width: 300px;
+  width: 100%;
+  padding: 10px;
+  grid-template-columns: 25% 75%;
+}
+.current-container .forecast-box .forecast-title h3 {
+  font-size: 1.5em;
+}
+.current-container .forecast-box .forecast-title span{
+  font-size: 0.8em;
+}
+.current-container .forecast-box .forecast-temp {
+  font-size: 2em;
+}
+.current-container .forecast-box .condition-text {
+  font-size: 1.3em;
+}
+/* Forecast */
+.forecast-box {
+  width: 160px;
+  height: 125px;
+  padding: 8px 0;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 25% 60% 15%;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.forecast-box .forecast-title {
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  grid-column: 1 / 3;
+}
+.forecast-box .forecast-title h3 {
+  font-size: 1.3em;
+}
+.forecast-box .condition-icon {
+  line-height: 0;
+}
+.forecast-box .forecast-temp {
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+.forecast-box .condition-icon img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+}
+.forecast-box .condition-text {
+  padding-top: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / 3;
+  font-size: 0.9em;
+}
