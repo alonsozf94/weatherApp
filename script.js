@@ -6,7 +6,7 @@ let content = document.querySelector(".content");
 async function fetchWeatherData(city) {
   try {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=bdd4add47bc04e8383233155242605&q=${city}&days=3&aqi=no&alerts=no`,
+      `https://api.weatherapi.com/v1/forecast.json?key=bdd4add47bc04e8383233155242605&q=${city}&days=3&aqi=no&alerts=no`,
       {
         mode: "cors",
       }
